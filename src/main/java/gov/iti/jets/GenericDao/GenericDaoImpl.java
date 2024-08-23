@@ -15,6 +15,8 @@ public abstract class GenericDaoImpl<T> implements GenericDAO<T> {
     protected final EntityManagerFactory emf = Persistence.createEntityManagerFactory("tony");
     protected EntityManager em;
     protected EntityTransaction transaction;
+
+    
     public GenericDaoImpl(Class<T> entityClass) {
         this.entityClass = entityClass;
     }
